@@ -23,8 +23,3 @@
         drawType(getColumn(value), getRow(value))
     });
 }();
-
-function drawDest223(ja, en) {
-    document.getElementById("dest-223-ja").innerHTML = ja;
-    document.getElementById("dest-223-en").innerHTML = en;
-}

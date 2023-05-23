@@ -2,23 +2,28 @@ main {
     overflow-x: visible;
 }
 
-.type-outer {
+.led-outer {
     display: inline-block;
     position: relative;
-    height: 96px;
-    width: 192px;
     overflow: hidden;
 }
-.type {
-    height: 32px;
-    width: 64px;
+.led {
     overflow: hidden;
     transform: scale(3);
     transform-origin: top left;
     position: absolute;
 }
-.type-inner {
+.led-inner {
     position: absolute;
+}
+
+.type-outer {
+    height: 96px;
+    width: 192px;
+}
+.type {
+    height: 32px;
+    width: 64px;
 }
 .type-img {
     image-rendering: pixelated;
@@ -26,46 +31,17 @@ main {
 }
 
 .dest-outer {
-    display: inline-block;
-    position: relative;
     height: 96px;
     width: 240px;
-    overflow: hidden;
 }
 .dest {
     height: 32px;
     width: 80px;
-    overflow: hidden;
-    transform: scale(3);
-    transform-origin: top left;
-    position: absolute;
-}
-.dest-inner {
-    position: absolute;
 }
 .dest-img {
     image-rendering: pixelated;
     height: 300%;
 }
-
-.dest-223-outer {
-    margin-left: 20px;
-    position: relative;
-    height: 96px;
-    width: 288px;
-}
-.dest-223 {
-    height: 32px;
-    width: 96px;
-    overflow: hidden;
-    transform: scale(3);
-    transform-origin: top left;
-    position: absolute;
-    background-color: #333;
-    text-align: center;
-}
-.dest-223-ja { font: 24px/1 'JF Dot jiskan24'; color: orange; transform: translateY(0.3px); }
-.dest-223-en { font: 8px/1 'koito_english'; color: red; }
 
 .ami {
     position: absolute;
