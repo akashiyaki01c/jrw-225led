@@ -12,7 +12,6 @@
         <div class="type-outer led-outer">
             <div class="type led">
                 <div id="type-inner" class="type-inner led-inner">
-                    <img class="type-img" src="./JR_type.png" alt="">
                 </div>
             </div>
             <div class="ami"></div>
@@ -20,7 +19,6 @@
         <div class="dest-outer led-outer">
             <div class="dest led">
                 <div id="dest-inner" class="dest-inner led-inner">
-                    <img class="dest-img" src="./JR_dest.png" alt="">
                 </div>
             </div>
             <div class="ami"></div>
@@ -29,8 +27,12 @@
     <select name="select-type" id="select-type"></select>
     <select name="select-dest" id="select-dest"></select>
 
-
+    <script src="lib/led.js"></script>
     <script src="./draw.js"></script>
     <script src="./select.js"></script>
+    <script>
+        const type = new LedDisplay("type-inner", "./JR_type.png", 64, 32);
+        const dest = new LedDisplay("dest-inner", "./JR_dest.png", 80, 32);
+    </script>
 </body>
 </html>

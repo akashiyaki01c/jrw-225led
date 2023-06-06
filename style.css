@@ -1,6 +1,9 @@
 main {
     overflow-x: visible;
     white-space: nowrap;
+    border: 50px solid gray;
+    width: fit-content;
+    font-size: 0;
 }
 
 .led-outer {
